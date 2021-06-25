@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.rock,
+.paper,
+.scissor {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+
+  color: black;
+  background-color: white;
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+  background-color: rgb(202, 231, 255);
+  border: 3px solid black;
+}
+
+i {
+  font-size: 80px;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-div {
+  margin: 50px 0 10px 0;
+  text-align: center;
+}
+
+.text-div h1 {
+  font-size: 60px;
+}
+
+.text-div h2 {
+  margin-top: 90px;
+  font-size: 30px;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 200px;
+}
+.score-div {
+  display: flex;
+}
+
+.score {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.box {
+  border: 7px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgb(202, 231, 255);
+}
+
+.player-name {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.new-game-button {
+  padding: 14px 65px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  visibility: hidden;
+  margin-top: 30px;
+  margin-bottom: -110px;
+}
+
+.show-new-game {
+  visibility: visible;
+}
+
+.new-game-button:hover {
+  background-color: rgb(202, 231, 255);
+}
+
+.select-hand {
+  font-size: 18px;
+  margin: 60px 0 10px 0;
+}
+
+.hand-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 80px;
+}

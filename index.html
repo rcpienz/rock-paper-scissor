@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8708bc16ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-Paper-Scissor</title>
+  </head>
+  <body>
+    <div class="text-div">
+      <h1>ROCK PAPER SCISSOR</h1>
+      <h2 class="result">Test your luck! First to 5 points.</h2>
+    </div>
+    <div class="boxes">
+      <div>
+        <div class="score-div">
+          <div class="score player-score"></div>
+          <div class="score player-score"></div>
+          <div class="score player-score"></div>
+          <div class="score player-score"></div>
+          <div class="score player-score"></div>
+        </div>
+        <div class="box"><i class="player-box"></i></div>
+        <h2 class="player-name">You</h2>
+      </div>
+      <div>
+        <div class="score-div">
+          <div class="score computer-score"></div>
+          <div class="score computer-score"></div>
+          <div class="score computer-score"></div>
+          <div class="score computer-score"></div>
+          <div class="score computer-score"></div>
+        </div>
+        <div class="box"><i class="computer-box"></i></div>
+        <h2 class="player-name">Computer</h2>
+      </div>
+    </div>
+    <button class="new-game-button">New Game</button>
+    <div class="select-hand"><h1>Select your hand:</h1></div>
+    <div class="hand-div">
+      <div class="hand rock" data-id="rock">
+        <i class="far fa-hand-rock"></i>
+      </div>
+      <div class="hand paper" data-id="paper">
+        <i class="far fa-hand-paper"></i>
+      </div>
+      <div class="hand scissor" data-id="scissor">
+        <i class="far fa-hand-scissors"></i>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
